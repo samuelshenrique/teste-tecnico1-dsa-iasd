@@ -1,0 +1,198 @@
+/*
+Theme Name: Teste Técnico
+Author: Samuel Santos Henrique
+Description: Tema destinado a desenvolver um tema básico para avaliação em teste técnico da DSA
+Version: 1.0
+Requires at least: 6.4
+Tested up to: 6.4
+Requires PHP: 8.2
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: teste-tecnico
+*/
+
+* {
+    font-family: "Noto Sans", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    width: 100%;
+}
+
+.header {
+    background-color: white;
+    width: 100%;
+}
+
+.header__conteudo {
+    display: flex;
+    padding-top: 10px;
+    width: 100%;
+}
+
+.header__logo {
+    align-items: center;
+    display: flex;
+    width: 30%;
+}
+
+.header__menus {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: flex-end;
+    width: 70%;
+}
+
+.header__sobre-menu,
+.nav .nav__ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.header__sobre-menu li,
+.nav .nav__ul li {
+    display: block;
+}
+
+.header__sobre-menu li a,
+.nav .nav__ul li a {
+    text-decoration: none;
+}
+
+.header__sobre-menu li a {
+    color: grey;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.nav .nav__ul li a {
+    font-family: "Noto Sans", serif;
+    color: black;
+    font-size: 18px;
+    text-transform: none;
+}
+
+.nav .nav__ul li.current-menu-item a {
+    border-bottom: 1px solid black;
+}
+
+.nav .nav__ul {
+    gap: 40px;
+}
+
+.nav .nav__ul li ul {
+    display: none;
+}
+
+.conteudo {
+    width: calc(100vw - 14.28vw);
+}
+
+.coluna-sabado {
+    background-color: #036;
+    box-sizing: border-box;
+    height: auto;
+    padding: 4em;
+    width: 14.28vw;
+}
+
+.coluna-sabado__logo {
+    width: 100%;
+}
+
+footer {
+    padding: 30px 0 0 0;
+    background-color: #f7f8fa;
+    width: 100%;
+}
+
+.footer__conteudo {
+    display: flex;
+    justify-content: center;
+    gap: 7em;
+    width: 100%;
+}
+
+.footer__contato {
+    width: 20%;
+}
+
+.contato {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contato__texto {
+    font-size: 14px;
+}
+
+.contato__item i {
+    padding-right: 8px;
+}
+
+.hr--menor {
+    margin: 25px 0;
+    width: 25%;
+}
+
+.footer__mapa-do-site {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 80%;
+}
+
+.footer__mapa h6 {
+    margin-bottom: 25px;
+}
+
+.footer__listas {
+    display: flex;
+    gap: 50px;
+}
+
+.footer__lista {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 33.3%;
+}
+
+.footer__lista li {
+    display: block;
+}
+
+.footer__lista li a {
+    font-size: 14px;
+    text-decoration: none;
+    color: grey;
+}
+
+.footer__copyright {
+    background-color: #eef0f3;
+    width: 100%;
+}
+
+.footer__copyright-conteudo {
+    display: flex;
+    font-size: 14px;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.conteudo__principal {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
