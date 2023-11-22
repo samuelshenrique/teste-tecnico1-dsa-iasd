@@ -1,0 +1,33 @@
+version: '3.1'
+
+services:
+  wordpress:
+    depends_on:
+      - db
+    build: ./docker/
+    restart: always
+    ports:
+      - 8000:80
+    environment:
+      WORDPRESS_DB_HOST: db:3306
+      WORDPRESS_DB_USER: wordpress
+      WORDPRESS_DB_PASSWORD: KS62gWF8inXRYyy4aBYjYmXF6go53gs2jAh7jR5i
+      WORDPRESS_DB_NAME: wordpress
+    volumes:
+      - ./theme:/var/www/html/wp-content/themes/teste-tecnico
+      - ./plugins:/var/www/html/wp-content/plugins/
+      - ./uploads:/var/www/html/wp-content/uploads/
+    
+  db:
+    image: mysql:8.2.0
+    ports:
+      - 3306:3306
+    restart: always
+    environment:
+      MYSQL_ROOT_HOST: "%"
+      MYSQL_DATABASE: wordpress
+      MYSQL_USER: wordpress
+      MYSQL_PASSWORD: KS62gWF8inXRYyy4aBYjYmXF6go53gs2jAh7jR5i
+      MYSQL_RANDOM_ROOT_PASSWORD: '1'
+    volumes:
+      - ./db:/var/lib/mysql
