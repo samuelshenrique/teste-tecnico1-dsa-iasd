@@ -17,7 +17,9 @@
         <header class="header">
             <div class="header__conteudo container">
                 <div class="header__logo">
-                    <img src="/wp-content/uploads/2023/11/dsa.svg" alt="Divisão Sul Americana" title="Divisão Sul Americana" class="header__imagem-logo">
+                    <a href="<?php echo home_url(); ?>">
+                        <img src="/wp-content/uploads/2023/11/dsa.svg" alt="Divisão Sul Americana" title="Divisão Sul Americana" class="header__imagem-logo">
+                    </a>
                 </div>
                 <div class="header__menus">
                     <?php
