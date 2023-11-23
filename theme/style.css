@@ -147,6 +147,15 @@ footer {
     width: 25%;
 }
 
+.hr--maior {
+    margin: 25px 0;
+    width: 75%;
+}
+
+.hr--centralizado {
+    margin: 25px auto;
+}
+
 .footer__mapa-do-site {
     display: flex;
     flex-direction: column;
@@ -195,4 +204,21 @@ footer {
 .conteudo__principal {
     margin-top: 30px;
     margin-bottom: 30px;
+}
+
+.paginacao ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+    width: 100%;
+}
+
+.paginacao ul li {
+    display: block;
+}
+
+.paginacao ul li a {
+    text-decoration: none;
+    color: grey;
 }
