@@ -1,0 +1,75 @@
+.pets {
+    margin: 30px 0;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.pets--listagem {
+    width: 30%;
+}
+
+.pets--listagem:hover {
+    box-shadow: 3px 2px 5px #cbccce;
+    cursor: pointer;
+}
+
+.pets__link {
+    border: 1px solid #cbccce;
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.pets__imagem {
+    border-radius: 5px;
+}
+
+.pets__detalhes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.pets__informacoes {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.pets__titulo {
+    font-size: 24px;   
+}
+
+/* SINGLE-PET */
+
+.pet__retornar-listagem {
+    color: grey;
+    display: block;
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+
+.pet__conteudo {
+    display: flex;
+    gap: 30px;
+    width: 100%;
+}
+
+.pet__foto {
+    width: 35%;
+}
+
+.pet__imagem {
+    object-fit: cover;
+    width: 100%;
+}
+
+.pet__detalhes {
+    display: flex;
+    flex-direction: column;    
+    max-height: 300px;
+}
